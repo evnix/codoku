@@ -1,0 +1,44 @@
+{
+  "title": "Codoku -  Static web site generator",
+  "name": "Codoku",
+  "logo": "assets/images/logo.png",
+  "publicLicenseKey": "UNREGISTERED",
+  "prefixTitle": "++ ",
+  "suffixTitle": " --",
+  "links": [
+    {
+      "name": "Home",
+      "href": "index.md",
+      "icon": "fa fa-home",
+      "newTab": false
+    },
+    {
+      "name": "Setup Links",
+      "href": "setup-links",
+      "icon": "fa fa-home",
+      "newTab": false
+    },
+    {
+      "name": "Example Menu",
+      "icon": "fa fa-clock-o",
+      "links": [
+        {
+          "name": "Example Sub-Menu",
+          "icon": "fa fa-clock-o",
+          "links": [
+            {
+              "name": "Lorem Ipsum Dolor",
+              "href": "example/lorem-ipsum.md",
+              "icon": "fa fa-clock-o"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Test Page",
+      "href": "test.md",
+      "icon": "fa fa-flag-o"
+    }
+  ]
+}

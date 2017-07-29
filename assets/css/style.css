@@ -1,0 +1,86 @@
+@import url("sidebar.css");
+
+#left {
+    background: #333131;
+    color: #ababab;
+    overflow-y: scroll;
+}
+
+#right {
+    background-color: #efefef;
+}
+
+#content {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    background: #ffffff;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.logotext {
+
+    text-align: center;
+    padding: 25px;
+    background: #505050;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
+
+.logotext img {
+    width: 185px;
+}
+
+#footer {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: x-small;
+
+}
+
+#footer a {
+    color: #666;
+}
+
+/*
+992px comes from the bootstrap grid sizes for 'lg'
+
+https://v4-alpha.getbootstrap.com/layout/grid/#grid-options 
+*/
+@media (min-width: 992px) {
+    #left {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+/* Zebra tables */
+
+table {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td {
+
+    padding: 10px;
+    border: 1px solid #dfe2e5;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+/* blockquote */
+blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+}

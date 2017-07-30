@@ -7,7 +7,6 @@ $(document).ready(function () {
 window.CODOKU = {};
 CODOKU.config = {}
 
-
 CODOKU.loadConfig = function () {
 
     var root = null;
@@ -198,13 +197,13 @@ CODOKU.renderPlaceHolder = function (link, parent) {
 
     if (link['icon'] !== undefined || link['icon'] !== "") {
 
-        icon = '<i class="' + link.icon + '"></i> ';
+        icon = '<i class="' + link.icon + '"></i>&nbsp;';
     }
 
-
-    var str = '<a href="' + link.href + '" class="list-group-item collapsed" data-toggle="collapse" aria-expanded="false">'
+    var str =
+        '<a href="' + link.href + '" class="list-group-item collapsed" data-toggle="collapse" aria-expanded="false">'
         + icon
-        + link.name
+        + '<span class="hidden-sm-down">' + link.name + '</span>'
         + '</a>'
 
 
@@ -236,7 +235,7 @@ CODOKU.renderLink = function (link, parent) {
         }
 
         if (link['icon'] !== undefined && link['icon'] !== "") {
-            icon = '<i class="' + link.icon + '"></i> ';
+            icon = '<i class="' + link.icon + '"></i>&nbsp;';
         }
 
         link.href = CODOKU.formatLink(link.href)

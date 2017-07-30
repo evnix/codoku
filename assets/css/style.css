@@ -1,9 +1,12 @@
 @import url("sidebar.css");
 
-#left {
+.customLeft {
     background: #333131;
     color: #ababab;
     overflow-y: scroll;
+    height: 100%;
+    position: fixed;
+
 }
 
 #right {

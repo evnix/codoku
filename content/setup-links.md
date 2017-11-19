@@ -1,6 +1,6 @@
 ## Setting up links
 
-Codoku comes with a `config.json` which used to setup the menu. you can go ahead and edit the file.
+Codoku comes with a `config.json` which is used to setup the menu. you can go ahead and edit the file.
 
 A typical link looks as follows:
 ```json
